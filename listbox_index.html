@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PHP: List Boxes with PHP</title>
+    <link rel="stylesheet" type="text/css" href="/abbey.css" media="screen" />
+    <meta name="keywords" content="abbey workshop, java, ruby, subversion, svn, os x, lamp, linux, mysql, unix, xml, xslt" />
+    <meta name="description" content="##description##" />
+	<!-- header lines here -->
+  </head>
+  <body>
+
+<div id="wrap">
+<!-- Start Google 468 Add -->
+<div id="Google468Ad">
+<script type="text/javascript">
+<!--
+google_ad_client = "ca-pub-8480088301545879";
+/* AbbeyWorkshop468 */
+google_ad_slot = "2471645308";
+google_ad_width = 468;
+google_ad_height = 60;
+// -->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<!-- End Google 468 Ad -->
+    <div id="main">
+      <h2>PHP: List Boxes with PHP</h2>
+
+	<div>
+		<p>This form shows how to create combo, single select list boxes, and multiple 
+        select boxes. The form is submitted to a PHP page that handles the form 
+        data passed to it. How that data is handled is also discussed below.</p>
+
+    <form name="form" method="post" action="listbox.php">
+        <h4>Combo and List Box Form</h4>
+        <p>Combo Box<br/>
+          <select name="select">
+            <option value="Option 1" selected="true">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+            <option value="Option 4">Option 4</option>
+          </select>
+        </p>
+
+        <p>List Box - Single Select<br/>
+          <select name="listbox" size="3">
+            <option value="Option 1" selected="true">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+            <option value="Option 4">Option 4</option>
+            <option value="Option 5">Option 5</option>
+          </select>
+        </p>
+
+        <p>List Box - Multiple Select<br/>
+          <select name="listmultiple[]" size="3" multiple="true">
+            <option value="Option 1" selected="true">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+            <option value="Option 4">Option 4</option>
+            <option value="Option 5">Option 5</option>
+          </select>
+
+        </p>
+
+        <p> 
+          <input type="submit" name="Submit" value="Submit"/>
+          <input type="reset" name="Reset" value="Reset"/>
+        </p>
+
+      </form>
+
+<div id="analytics">
+<!-- Google Analytics Code for Abbey Workshop-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-146004-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Google Analytics Code -->
+</div>
+</footer>
+</div>
+
+  </body>
+</html>
